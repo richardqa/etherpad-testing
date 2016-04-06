@@ -1,9 +1,4 @@
-#
-# Etherpad lite Dockerfile
-#
-# Based on instructions from https://github.com/ether/etherpad-lite
-#
-
-FROM node:0.12
-
-MAINTAINER Johannes Bornhold <johannes@bornhold.name>
+FROM richardqa/bro1:v1
+MAINTAINER Richard Quinto <richardqa@gmail.com>
+RUN apt-get -y install nmap
+WORKDIR /
